@@ -11,7 +11,6 @@ console.log("-------------------------------------------------------------------
 var myLove="I love only JS";    //variable declaration and initialization
 console.log("\nValue of variable myLove after declaring and initializing at same line:\t",myLove);
 console.log("----------------------------------------------------------------------------------------------------------------------------------------------------");
-
 var firstName,lastName,email,graduation,passoutYear,city,citizenship,phone,address;//variables declaration
 console.log("Form controls used in registration form:");
 firstName="xyz";
