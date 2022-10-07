@@ -38,7 +38,7 @@ console.log("-------------------------------------------------------------------
 console.log("\n Example of function with multiple parameters:");
 //function for add three numbers
 function add_three_numbers(num1,num2,num3){
-    console.log("\n Addition of three numbers (num1=10.23,num2=600,num3=40) is:",(num1+num2+num3),"\n");
+    console.log("\n result of operation numbers is:",(num1+num2+num3),"\n");
 }
 // arg for addition of 3 numbers
 add_three_numbers(10.23,600,40);
