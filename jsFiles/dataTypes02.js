@@ -17,6 +17,8 @@ console.log("-------------------------------------------------------------------
 console.log("\nnull:-\n \t Whenever we want a empty variable i.e without default value(undefined) that time we just assign null to that variable as value. ");
 var firstName=null;
 console.log("\n Example of null:- e.g. var firstName=null; here it takes the null instead of default value i.e null(empty):\n value of firstName=",firstName,"\n");
+console.log("Example of null:- e.g. var firstName=null; with typeof:\n value of firstName=",typeof(firstName),"\n");
+
 
 
 
