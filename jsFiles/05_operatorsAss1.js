@@ -1,7 +1,7 @@
-console.log(`\nstep-1 : Function expression for check greatest number given number is even or odd:`);
+console.log(`\nstep-1 : Function expression for check greatest number between given numbers:`);
 
 var greatestNumber=function(num1,num2){
-var result= (num1>num2)?"number1":"number2"; // ternary operator for checking greatest number
+var result= (num1>num2)?num1:num2; // ternary operator for checking greatest number
 console.log(`\nGreatest number = ${result}`);
 }
 greatestNumber(10,-10); // function call
