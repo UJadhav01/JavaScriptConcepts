@@ -69,8 +69,8 @@ function evenPositionChars(str2){
 var evenPosChar="";
 var lowerString=str2.toLowerCase();
 for (let index = 0; index < lowerString.length; index++) {
-if(index%2==0 && lowerString.charAt!=" ") {
-   return evenPosChar=evenPosChar+lowerString.charAt(index);
+if(index%2==0 && lowerString.charAt(index)!=" ") {
+    evenPosChar=evenPosChar+lowerString.charAt(index);
 }   
 }
 console.log(`---------------------------------------------------`);
