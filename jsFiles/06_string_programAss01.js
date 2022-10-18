@@ -12,7 +12,7 @@ if(vowels.includes(strLowerCase.charAt(index))){
 }
 }
 console.log(`\nNumber of vowels in given string using include() = ${vowelsCount}`);
-console.log(`--------------------------------------------------------`);
+console.log(`------------------------------------------------------------------------------------------`);
 
 
 //WAP for count vowels from the string using function--> "I Love JavaScript"
@@ -33,6 +33,7 @@ function vowelsCounts(str){
 console.log(`\n Number of vowels in given string = ${vowelsCount1}`);
 }
 vowelsCounts("I Love JavaScript");
+console.log(`------------------------------------------------------------------------------------------`);
 
 //Write a function expression to sum all numbers from 1 to 10
 console.log("\nstep-3 : Program for sum of number from 1 to 10,using function expression");
@@ -45,6 +46,7 @@ var sunOFNumbers=function(number){
     console.log(`\nSum of numbers from 1 to 10 = ${sumTotal}`);
 }
 sunOFNumbers(10);
+console.log(`------------------------------------------------------------------------------------------`);
 
 //Write a function to get sum numbers square from 1 to 10
 console.log("\nstep-4 : Program to get sum of numbers square from 1 to 10,using function");
@@ -60,10 +62,10 @@ sunOFNumbers(10);
 
 //WAP for string1="Hard work always pays back" , string2="Soon I will be Angular IT Champ" using function
 //print odd position characters and even position characters without considering space
+console.log(`------------------------------------------------------------------------------------------`);
 
-console.log("\nStep-5 : Program for string1=Hard work always pays back ,\n string2=Soon I will be Angular IT Champ using function print odd position characters and even position characters without considering space");
+console.log("\nStep-5 : Program for string1=Hard work always pays back ,\n\t string2=Soon I will be Angular IT Champ \n\tusing function print odd position characters and \n\t even position characters without considering space");
 //function for display even position characters
-console.log(`\nGiven string is string1 = "Hard work always pays back" \n string2 = Soon I will be Angular IT Champ`);
 
 function evenPositionChars(str2){
 var evenPosChar="";
@@ -96,3 +98,4 @@ function oddPositionChars(str1){
 }
 oddPositionChars("Hard work always pays back");
 oddPositionChars("Soon I will be Angular IT Champ");
+console.log(`\n`);
