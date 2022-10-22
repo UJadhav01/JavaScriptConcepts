@@ -26,6 +26,12 @@ person2.city="wangi";   //for adding properties in object
 //Object.keys(person); // for get total no of keys in object
 //Object.values(person);// for get total no of values in object
 //Object.entries(person);// for get total no of entries in object
+/**console.log("=========== in operator================");
+let isAvailable = "fullName" in mohitPerson;
+console.log(isAvailable);
+console.log("city" in mohitPerson);
+console.log("===========================");
+ */
 console.log(person.firstName,person.lastName,person.age);// access obkect using dot . operator
 console.log(person2["firstName"],person2["lastName"],person2["age"]); // you can access object as this also using []
 console.log(typeof(person));
@@ -36,3 +42,13 @@ console.table(person2.address.country);
 console.log(`-------------------------------------------------------`);
 person2.eat();
 person2.details();
+let isAvailable="firstName" in person;
+console.log(isAvailable);
+
+//for in loop to traverse object data
+for (const key in person) {
+    if (Object.hasOwnProperty.call(person, key)) {
+        const element = person[key];
+        console.log(element);
+    }
+}
