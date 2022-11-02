@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Storage</title>
+</head>
+<body>
+    <script>
+        //for checking browser is supporting for storage or not
+        if (typeof(Storage) !== "undefined") {
+  // Code for localStorage/sessionStorage.
+  console.log('browser supports localStorage/sessionStorage storage'); // used to display result on console in browser
+  document.write('browser supports localStorage/sessionStorage storage'); // display result on screen in browser
+} else {
+  // Sorry! No Web Storage support..
+  console.log('Sorry! No Web Storage  support');
+  document.write('Sorry! No Web Storage  support');
+}
+/*To use localStorage in your web applications, there are five methods to choose from:
+
+setItem(): Add key and value to localStorage
+getItem(): This is how you get items from localStorage
+removeItem(): Remove an item by key from localStorage
+clear(): Clear all localStorage
+key(): Passed a number to retrieve the key of a localStorage*/
+window.localStorage.setItem("Yadav","Payal");
+window.localStorage.setItem("Jadhav","Vrinda");
+window.localStorage.setItem("Mane","Rajveer");
+  window.localStorage.setItem("More","krishna");// Add key and value to localStorage
+  window.localStorage.setItem("Kale","Shivanshi");
+  window.localStorage.setItem("Patil","Arya");
+
+document.write("<br />","Get Data from local storage using getItem() with the help of key :");
+  // document.writeln("<br />",window.localStorage.getItem("More"));//This is how you get items from localStorage
+  // document.writeln("<br />",window.localStorage.getItem("Kale"));
+  // document.writeln("<br />",window.localStorage.getItem("Mane"));
+  // document.writeln("<br />",window.localStorage.getItem("Patil"));
+  // document.writeln("<br />",window.localStorage.getItem("Jadhav"));
+  // document.writeln("<br />",window.localStorage.getItem("Yadav"));  
+
+ for (let i = 0; i < localStorage.length; i++) {
+  const key = localStorage.key(i)
+  document.writeln("<br />",key,"=",localStorage.getItem(key));  
+}
+document.write("<br /><br />",'Get the length of localStorage using length property = ',window.localStorage.length);
+
+document.write("<br /><br />",'localStorage after remove 4th entry :');
+window.localStorage.removeItem("More");
+//  //looping through each key and value respectively in local storage.
+//   for (const [key, value] of Object.entries(localStorage)) {
+//    document.write("<br />",(key,value));
+// }
+// for (let i = 0; i < localStorage.length; i++) {
+//   const key = localStorage.key(i)
+//   document.writeln("<br />",key,"=",localStorage.getItem(key));  
+// }
+for (const key in localStorage) {
+  // Skip built-in properties like length, setItem, etc. the object prototype's own properties, you can use the hasOwnProperty()
+  if (localStorage.hasOwnProperty(key)) {
+    document.writeln("<br/>",`${key} = ${localStorage.getItem(key)}`)
+  }
+}
+
+document.write("<br /><br />",'At last step cleared the localStorage using clear() ');
+window.localStorage.clear();
+    </script>
+</body>
+</html>
