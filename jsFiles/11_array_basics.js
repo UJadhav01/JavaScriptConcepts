@@ -1,4 +1,12 @@
 var arrayOfNumber=[1,2,3,4,5,6,7,8,2];
+var arrayOfNumbers = [1, 3, 7, 8, 9, 3, 7];
+console.log("========== Resize array========");
+console.log(arrayOfNumbers.length);
+arrayOfNumbers.length = 3;
+console.log(arrayOfNumbers.length);
+console.log(arrayOfNumbers);
+console.log("========== Resize array========");
+
 console.log(arrayOfNumber);
 var arrayOfNumbers = [1, 3, 7, 8, 9, 3, 7];
 console.log(arrayOfNumbers);
