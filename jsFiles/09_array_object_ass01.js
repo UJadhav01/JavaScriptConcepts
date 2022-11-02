@@ -46,3 +46,13 @@ const array=[bank_sbi,bank_location,rate_of_interest];
 for (const element of array) {
     console.log(`${Object.entries(element)}`);
 }
+
+console.log(`\nObject sbi_details traversed using for in loop :`);
+
+for (const key in sbi_details) {
+    if (Object.hasOwnProperty.call(sbi_details, key)) {
+        const element = sbi_details[key];
+        console.log(key,"=",element);
+    }
+
+}
