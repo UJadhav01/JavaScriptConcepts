@@ -1,0 +1,12 @@
+let date=new Date();
+console.log(date);
+console.log(date.getDate());
+console.log(date.toLocaleDateString());
+console.log(date.toDateString());
+console.log(date.toTimeString());
+console.log(new Date("feb 05,2020 01:00:00"));
+console.log(new Date("1977-05-15"));
+console.log(new Date("11 oct 1987"));
+console.log(date.getDay(),date.getHours());
+console.log(date.getFullYear(),date.getTimezoneOffset());
+console.log(date.getVarDate);
