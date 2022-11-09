@@ -69,7 +69,9 @@ let averageSalary=0;
 array_emps.filter((value)=>{
     averageSalary+=value.emp_salary;
 });
+
 console.log(`Average salary of all dept employees = `,(averageSalary/array_emps.length));
+
 console.log(`-------------------------------------------------------------------------------------------------------------------------------------------------`);
 //[ Hint → Filter the ‘IT’ department employee using filter( ) which return new array with only ‘IT’ department employees and then use reduce( ) to get the average ]
 console.log(`Step-6 : the average salary for 'IT' department`);
@@ -87,4 +89,25 @@ arrayOfItDepEmp.filter((value)=>{
     }
     return averageSalary2;
 });
-console.log(`Average salary of IT dept employees = `,(averageSalary2/arrayOfItDepEmp.length))
+console.log(`Average salary of IT dept employees = `,(averageSalary2/arrayOfItDepEmp.length));
+
+
+// console.log("--------------------Average Salary of the Employee who is working in IT dept-------------------------");
+// var array1=array.filter((value)=>{
+//     return value.emp_dept==='IT';
+
+// });
+// console.log(array1);
+// var array2=[];
+// array1.forEach((value1)=>{
+    
+//     array2.push(value1.emp_salary);
+
+// });
+// console.log(array2);
+
+// var array3=array2.reduce((a,b)=>{
+//     return a+b;
+
+// });
+// console.log(array3/array1.length);

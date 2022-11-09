@@ -68,7 +68,7 @@ for (const index in arrayOfNumbers) {
 let totalElements = arrayOfNumbers.length-1;
 for (let index = totalElements; index >= 0; index--) {
     const element = arrayOfNumbers[index];
-   // console.log(element);
+   console.log(element);
     
 }
 
