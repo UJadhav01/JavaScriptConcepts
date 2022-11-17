@@ -65,12 +65,24 @@ array_emps.filter((value)=>{
 });
 console.log(`-------------------------------------------------------------------------------------------------------------------------------------------------`);
 console.log(`Step-5 : the average salary of the employee for all the department`);
-let averageSalary=0;
-array_emps.filter((value)=>{
-    averageSalary+=value.emp_salary;
-});
+// let averageSalary=0;
+// array_emps.filter((value)=>{
+//     averageSalary+=value.emp_salary;
+// });
 
-console.log(`Average salary of all dept employees = `,(averageSalary/array_emps.length));
+var array2=[];
+array_emps.forEach((value1)=>{
+    
+    array2.push(value1.emp_salary);
+
+});
+//console.log(array2);
+
+var array3=array2.reduce((a,b)=>{
+    return a+b;
+
+});
+console.log(`Average salary of all dept employees = `,(array3/array_emps.length));
 
 console.log(`-------------------------------------------------------------------------------------------------------------------------------------------------`);
 //[ Hint → Filter the ‘IT’ department employee using filter( ) which return new array with only ‘IT’ department employees and then use reduce( ) to get the average ]
