@@ -4,7 +4,13 @@
 
 // using function
 var isPalindrome=function(string){
-var strReverse=string.split("").reverse().join("");
+
+  if(typeof string=='number'){
+    var string1=string.toString();
+    var strReverse=string1.split("").reverse().join("");
+  }else{
+    var strReverse=string.split("").reverse().join("");
+  }
 
 if(string==strReverse)
 {
@@ -17,4 +23,8 @@ isPalindrome('java');
 isPalindrome('madam');
 isPalindrome('101');
 isPalindrome('123456');
+isPalindrome('121');
+isPalindrome(1234);
+
+
 
